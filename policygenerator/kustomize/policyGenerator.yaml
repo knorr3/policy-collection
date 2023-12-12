@@ -34,4 +34,7 @@ policies:
       - path: policy2_gatekeeper/gatekeeper.yaml
   - name: policy-kyverno-require-labels
     manifests:
-      - path: policy3_kyverno/kyverno.yaml
+      - path: policy3_kyverno/kyverno-purpose-ns.yaml
+  - name: policy-kyverno-disallow-latest-tag
+    manifests:
+      - path: policy3_kyverno/kyverno-latest.yaml
